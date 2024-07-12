@@ -7,6 +7,7 @@ import { Search } from "../components/search";
 import { Section } from "../components/section";
 import { TrendingFoods } from "../components/trending";
 import { Restaurants } from "../components/restaurants";
+import { RestaurantsVerticalList } from "../components/list";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -40,6 +41,15 @@ export default function Index() {
       />
 
       <Restaurants/>
+
+      <Section
+      name="Restaurantes"
+      label="Veja todos"
+      action={()=>{console.log('Clicou no veja todos os restaurantes')}}
+      size="text-xl"
+      />
+
+      <RestaurantsVerticalList/>
 
 
     </ScrollView>
